@@ -94,7 +94,7 @@ MiAirPurifier2AirPurifierAccessory.prototype.getServices = function() {
         currentRelativeHumidityCharacteristic.getValue();
         pm25DensityCharacteristic.getValue();        
         airQualityCharacteristic.getValue();
-    }, 5000);
+    }, 1000);
     
     silentModeOnCharacteristic
         .on('get', function(callback) {
